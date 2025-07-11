@@ -173,13 +173,13 @@ export default function ProjectsPage() {
   return (
     <div>
       <PageHeader
-        title="My Projects"
-        description="Explore my portfolio of innovative solutions, creative applications, and technical achievements"
+        title="Dự án"
+        description="Khám phá các dự án đặc sắc của tôi, các ứng dụng sáng tạo và thành tựu kỹ thuật"
         gradient="from-blue-600 via-purple-600 to-pink-600"
       />
 
       {/* Filter Categories */}
-      <section className="px-6 py-12">
+      {/* <section className="px-6 py-12">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
@@ -193,7 +193,7 @@ export default function ProjectsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Grid */}
       <section className="px-6 py-12">
@@ -274,7 +274,7 @@ export default function ProjectsPage() {
                     </div>
 
                     <div className="space-y-3 mb-6">
-                      <h4 className="font-semibold text-gray-800 dark:text-gray-100">Key Features:</h4>
+                      <h4 className="font-semibold text-gray-800 dark:text-gray-100">Tính năng chính:</h4>
                       <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                         {project.features.slice(0, 3).map((feature, i) => (
                           <li key={i} className="flex items-center">
@@ -288,7 +288,7 @@ export default function ProjectsPage() {
                     <div className="flex space-x-3">
                       <Link href={`/projects/${project.id}`} className="flex-1">
                         <MagneticButton className="w-full rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white">
-                          View Details
+                          Xem chi tiết
                         </MagneticButton>
                       </Link>
                       <MagneticButton
@@ -308,26 +308,26 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-20">
+      {/* <section className="px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <Card3D className="glassmorphism-card rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800 dark:text-gray-100">
-              Have a Project in Mind?
+              Có dự án trong tâm trí?
             </h2>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss how we can bring your ideas to life with innovative solutions and cutting-edge technology.
+              Hãy thảo luận về cách chúng ta có thể mang ý tưởng của bạn đến với tôi với các giải pháp sáng tạo và công nghệ tiên tiến.
             </p>
             <Link href="/contact">
               <MagneticButton
                 size="lg"
                 className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 shadow-lg hover:shadow-xl"
               >
-                Start a Conversation
+                Bắt đầu cuộc trò chuyện
               </MagneticButton>
             </Link>
           </Card3D>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

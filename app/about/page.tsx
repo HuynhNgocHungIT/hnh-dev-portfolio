@@ -24,36 +24,21 @@ export default function AboutPage() {
       description:
         "Leading development of enterprise-level web applications using React, Node.js, and AWS. Mentoring junior developers and architecting scalable solutions.",
       achievements: ["Led team of 5 developers", "Reduced load times by 40%", "Implemented CI/CD pipeline"],
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Innovations Inc.",
-      period: "2020 - 2022",
-      description:
-        "Developed responsive web applications and collaborated with design teams to create exceptional user experiences.",
-      achievements: ["Built 15+ client projects", "Improved user engagement by 60%", "Mentored 3 junior developers"],
-    },
-    {
-      title: "Junior Web Developer",
-      company: "StartupHub",
-      period: "2019 - 2020",
-      description: "Started my professional journey building websites and learning modern development practices.",
-      achievements: ["Completed 20+ projects", "Learned React & Node.js", "Contributed to open source"],
-    },
+    }
   ]
 
   const achievements = [
-    { icon: Award, title: "50+ Projects", description: "Successfully completed projects" },
-    { icon: Users, title: "30+ Clients", description: "Satisfied clients worldwide" },
-    { icon: Coffee, title: "1000+ Cups", description: "Of coffee consumed while coding" },
-    { icon: Clock, title: "5+ Years", description: "Of professional experience" },
+    { icon: Award, title: "50+ Dự án", description: "Thành công" },
+    { icon: Users, title: "30+ Khách hàng", description: "Hài lòng" },
+    { icon: Coffee, title: "1000+ Tách cà phê", description: "Đã uống" },
+    { icon: Clock, title: "5+ Năm", description: "Kinh nghiệm" },
   ]
 
   return (
     <div>
       <PageHeader
-        title="About Me"
-        description="Get to know the person behind the code - my journey, skills, and passion for creating digital experiences"
+        title="Về tôi"
+        description="Tìm hiểu về tôi - lộ trình, kỹ năng, và sự đam mê trong việc tạo ra trải nghiệm số"
         gradient="from-purple-600 via-blue-600 to-cyan-600"
       />
 
@@ -72,22 +57,22 @@ export default function AboutPage() {
             </Card3D>
             <div className="space-y-6">
               <Card3D className="glassmorphism-card rounded-3xl p-8">
-                <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-100">My Journey</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-100">Lộ trình</h2>
                 <div className="space-y-4 text-gray-700 dark:text-gray-300">
                   <p>
-                    Hello! I'm a passionate software engineer with over 5 years of experience in creating digital
-                    solutions that make a difference. My journey began with a curiosity about how websites work, which
-                    quickly evolved into a deep love for coding and problem-solving.
+                    Xin chào! Tôi là một nhà phát triển phần mềm với hơn 5 năm kinh nghiệm trong việc tạo ra các giải pháp số
+                    mà có thể làm khác biệt. Lộ trình của tôi bắt đầu với sự tò mò về cách các trang web hoạt động,
+                    điều này nhanh chóng phát triển thành tình yêu sâu sắc đối với lập trình và giải quyết vấn đề.
                   </p>
                   <p>
-                    I specialize in full-stack development, with expertise in modern frameworks like React, Next.js, and
-                    Node.js. But what truly drives me is the intersection of technology and creativity - building
-                    applications that are not just functional, but beautiful and intuitive.
+                    Tôi chuyên về phát triển full-stack, với chuyên môn trong các framework hiện đại như React, Next.js,
+                    và Node.js. Nhưng điều thực sự khiến tôi hài lòng là sự giao thoa giữa công nghệ và sáng tạo - xây
+                    dựng các ứng dụng không chỉ đơn thuần là hàm năng, mà còn đẹp và trực quan.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing to open-source
-                    projects, or sharing knowledge with the developer community. I believe in continuous learning and
-                    staying ahead of the curve in this ever-evolving field.
+                    Khi tôi không lập trình, bạn sẽ tìm thấy tôi đang khám phá các công nghệ mới, đóng góp cho các dự
+                    án mã nguồn mở, hoặc chia sẻ kiến thức với cộng đồng lập trình viên. Tôi tin vào việc học liên
+                    tục và luôn ở đầu để đối phó với sự thay đổi liên tục trong lĩnh vực này.
                   </p>
                 </div>
               </Card3D>
@@ -115,9 +100,9 @@ export default function AboutPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Technical Skills</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Kỹ năng</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              A comprehensive overview of my technical expertise and proficiency levels
+              Tổng quan về kỹ năng và trình độ của tôi
             </p>
           </div>
 
@@ -133,10 +118,10 @@ export default function AboutPage() {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold text-gray-800 dark:text-gray-100">{skill.name}</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">{skill.level}% Proficiency</p>
+                      {/* <p className="text-sm text-gray-600 dark:text-gray-400">{skill.level}% Proficiency</p> */}
                     </div>
                   </div>
-                  <Progress value={skill.level} className="h-2" />
+                  {/* <Progress value={skill.level} className="h-2" /> */}
                 </Card>
               </Card3D>
             ))}
@@ -148,9 +133,9 @@ export default function AboutPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Work Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Kinh nghiệm</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              My professional journey and key accomplishments
+              Lộ trình và kết quả đặc biệt trong công việc
             </p>
           </div>
 

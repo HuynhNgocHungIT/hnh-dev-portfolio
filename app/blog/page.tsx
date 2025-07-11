@@ -298,7 +298,7 @@ export default function BlogPage() {
               <Card className="glassmorphism-card rounded-3xl border-0 shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4 flex items-center">
                   <Tag className="w-5 h-5 mr-2" />
-                  Popular Tags
+                  Tags phổ biến
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {popularTags.map((tag) => (
@@ -317,9 +317,9 @@ export default function BlogPage() {
             {/* Newsletter Signup */}
             <Card3D>
               <Card className="glassmorphism-card rounded-3xl border-0 shadow-lg p-6">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Stay Updated</h3>
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Cập nhật</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Get the latest articles and insights delivered to your inbox.
+                  Nhận các bài viết và bản tin mới nhất đến email của bạn.
                 </p>
                 <div className="space-y-3">
                   <Input placeholder="Your email address" className="rounded-xl" />
@@ -342,14 +342,14 @@ export default function BlogPage() {
                 />
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">HNH Dev</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Full-stack developer passionate about sharing knowledge and building amazing digital experiences.
+                  Nhà phát triển phần mềm với hơn 5 năm kinh nghiệm trong việc tạo ra các giải pháp số mà có thể làm khác biệt.
                 </p>
                 <Link href="/about">
                   <MagneticButton
                     variant="outline"
                     className="rounded-xl border-purple-300 text-purple-600 hover:bg-purple-50"
                   >
-                    Learn More
+                    Tìm hiểu thêm
                   </MagneticButton>
                 </Link>
               </Card>
@@ -363,17 +363,17 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto text-center">
           <Card3D className="glassmorphism-card rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800 dark:text-gray-100">
-              Want to Work Together?
+              Muốn làm việc cùng nhau?
             </h2>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              If you enjoyed reading my articles, let's discuss how we can collaborate on your next project.
+              Nếu bạn thích đọc bài viết của tôi, hãy thảo luận về cách chúng ta có thể hợp tác trên dự án tiếp theo của bạn.
             </p>
             <Link href="/contact">
               <MagneticButton
                 size="lg"
                 className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 shadow-lg hover:shadow-xl"
               >
-                Get In Touch
+                Liên hệ
                 <ArrowRight className="w-5 h-5 ml-2" />
               </MagneticButton>
             </Link>

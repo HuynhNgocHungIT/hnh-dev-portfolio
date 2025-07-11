@@ -14,11 +14,7 @@ import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   const typingTexts = [
-    "Creative Software Engineer",
-    "Full-Stack Developer",
-    "UI/UX Designer",
-    "Problem Solver",
-    "Innovation Enthusiast",
+    "Full-Stack Developer"
   ]
 
   const orbitSkills = [
@@ -91,7 +87,7 @@ export default function HomePage() {
           <Card3D className="glassmorphism-card rounded-3xl p-8 md:p-12 mb-8">
             <div className="mb-6">
               <div className="text-lg md:text-xl text-purple-600 dark:text-purple-400 mb-4 font-medium">
-                Hello, I'm a
+                Xin chào, tôi là
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 min-h-[1.2em]">
                 <TypingAnimation
@@ -101,9 +97,8 @@ export default function HomePage() {
               </h1>
             </div>
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-              Crafting beautiful, functional, and user-centered digital experiences through innovative code and creative
-              problem-solving.
             </p>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/projects">
                 <MagneticButton
@@ -111,7 +106,7 @@ export default function HomePage() {
                   className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 shadow-lg hover:shadow-xl"
                 >
                   <Rocket className="w-5 h-5 mr-2" />
-                  View My Work
+                  Xem dự án
                 </MagneticButton>
               </Link>
               <Link href="/contact">
@@ -121,7 +116,7 @@ export default function HomePage() {
                   className="rounded-full border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 bg-transparent shadow-lg hover:shadow-xl"
                 >
                   <Heart className="w-5 h-5 mr-2" />
-                  Get In Touch
+                  Liên hệ
                 </MagneticButton>
               </Link>
             </div>
@@ -137,25 +132,25 @@ export default function HomePage() {
               <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
                 <AnimatedCounter end={50} suffix="+" />
               </div>
-              <p className="text-gray-600 dark:text-gray-400">Projects Completed</p>
+              <p className="text-gray-600 dark:text-gray-400">Dự án hoàn thành</p>
             </Card3D>
             <Card3D className="text-center glassmorphism-card rounded-3xl p-6 hover-lift">
               <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
                 <AnimatedCounter end={5} suffix="+" />
               </div>
-              <p className="text-gray-600 dark:text-gray-400">Years Experience</p>
+              <p className="text-gray-600 dark:text-gray-400">Năm kinh nghiệm</p>
             </Card3D>
             <Card3D className="text-center glassmorphism-card rounded-3xl p-6 hover-lift">
               <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
                 <AnimatedCounter end={30} suffix="+" />
               </div>
-              <p className="text-gray-600 dark:text-gray-400">Happy Clients</p>
+              <p className="text-gray-600 dark:text-gray-400">Khách hàng hài lòng</p>
             </Card3D>
             <Card3D className="text-center glassmorphism-card rounded-3xl p-6 hover-lift">
               <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
                 <AnimatedCounter end={15} suffix="+" />
               </div>
-              <p className="text-gray-600 dark:text-gray-400">Technologies</p>
+              <p className="text-gray-600 dark:text-gray-400">Công nghệ</p>
             </Card3D>
           </div>
         </div>
@@ -165,9 +160,9 @@ export default function HomePage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Skills & Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Kỹ năng & Kinh nghiệm</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern digital experiences
+              {/* Kỹ năng và kinh nghiệm của tôi để giúp bạn xây dựng dự án của mình */}
             </p>
           </div>
           <SkillOrbit skills={orbitSkills} />
@@ -178,9 +173,9 @@ export default function HomePage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Featured Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Dự án đặc sắc</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              A showcase of my recent work and creative solutions
+              {/* Một số dự án đặc sắc của tôi để giúp bạn xây dựng dự án của mình */}
             </p>
           </div>
 
@@ -238,7 +233,7 @@ export default function HomePage() {
                 size="lg"
                 className="rounded-full border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 bg-transparent"
               >
-                View All Projects
+                Xem tất cả dự án
                 <ArrowRight className="w-5 h-5 ml-2" />
               </MagneticButton>
             </Link>
@@ -246,17 +241,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Preview */}
+
+         {/* 
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">What Clients Say</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Testimonials from satisfied clients and collaborators
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">Đánh giá từ khách hàng</h2>
+          
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+       <div className="grid md:grid-cols-3 gap-8 mb-12">
             {testimonials.map((testimonial, index) => (
               <Card3D key={index}>
                 <Card className="glassmorphism-card rounded-3xl border-0 shadow-lg hover-lift h-full">
@@ -288,8 +283,8 @@ export default function HomePage() {
                 </Card>
               </Card3D>
             ))}
-          </div>
-
+          </div> 
+{/* 
           <div className="text-center">
             <Link href="/testimonials">
               <MagneticButton
@@ -297,23 +292,23 @@ export default function HomePage() {
                 size="lg"
                 className="rounded-full border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 bg-transparent"
               >
-                View All Testimonials
+                Xem tất cả đánh giá
                 <ArrowRight className="w-5 h-5 ml-2" />
               </MagneticButton>
             </Link>
-          </div>
+          </div> 
         </div>
       </section>
-
+*/}
       {/* CTA Section */}
-      <section className="px-6 py-20">
+      {/* <section className="px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <Card3D className="glassmorphism-card rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800 dark:text-gray-100">
-              Ready to Start Your Project?
+              Sẵn sàng bắt đầu dự án của bạn?
             </h2>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's collaborate and bring your ideas to life with innovative solutions and creative design.
+              Hãy hợp tác và mang ý tưởng của bạn đến với tôi với các giải pháp sáng tạo và thiết kế độc đáo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
@@ -322,7 +317,7 @@ export default function HomePage() {
                   className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 shadow-lg hover:shadow-xl"
                 >
                   <Zap className="w-5 h-5 mr-2" />
-                  Start a Project
+                  Bắt đầu dự án
                 </MagneticButton>
               </Link>
               <Link href="/services">
@@ -331,14 +326,14 @@ export default function HomePage() {
                   size="lg"
                   className="rounded-full border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 bg-transparent shadow-lg hover:shadow-xl"
                 >
-                  View Services
+                  Xem dịch vụ
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </MagneticButton>
               </Link>
             </div>
           </Card3D>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

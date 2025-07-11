@@ -135,8 +135,8 @@ export default function ContactPage() {
   return (
     <div>
       <PageHeader
-        title="Get In Touch"
-        description="Ready to start your project? Let's discuss how we can bring your ideas to life"
+        title="Liên hệ"
+        description="Sẵn sàng bắt đầu dự án của bạn? Hãy thảo luận về cách chúng ta có thể hợp tác trên dự án tiếp theo của bạn."
         gradient="from-cyan-600 via-purple-600 to-pink-600"
       />
 
@@ -167,9 +167,9 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           <Card3D className="glassmorphism-card rounded-3xl border-0 shadow-lg">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-gray-800 dark:text-gray-100">Start Your Project</CardTitle>
+              <CardTitle className="text-3xl text-gray-800 dark:text-gray-100">Bắt đầu dự án của bạn</CardTitle>
               <CardDescription className="text-lg text-gray-700 dark:text-gray-300">
-                Fill out the form below and I'll get back to you within 24 hours with a detailed proposal.
+                Điền vào form bên dưới và tôi sẽ trả lời bạn trong vòng 24 giờ với một đề xuất chi tiết.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -315,7 +315,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="px-6 py-20">
+      {/* <section className="px-6 py-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">
@@ -339,7 +339,7 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

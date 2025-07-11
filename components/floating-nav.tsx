@@ -47,25 +47,26 @@ export function FloatingNav() {
   ]
 
   return (
-    <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
-      <div className="glassmorphism-card rounded-full p-2 space-y-2">
-        {navItems.map(({ id, icon: Icon, label }) => (
-          <Button
-            key={id}
-            variant="ghost"
-            size="icon"
-            onClick={() => scrollToSection(id)}
-            className={`rounded-full w-12 h-12 transition-all duration-300 ${
-              activeSection === id
-                ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
-                : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
-            }`}
-            title={label}
-          >
-            <Icon className="w-5 h-5" />
-          </Button>
-        ))}
-      </div>
-    </div>
+    // <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
+    //   <div className="glassmorphism-card rounded-full p-2 space-y-2">
+    //     {navItems.map(({ id, icon: Icon, label }) => (
+    //       <Button
+    //         key={id}
+    //         variant="ghost"
+    //         size="icon"
+    //         onClick={() => scrollToSection(id)}
+    //         className={`rounded-full w-12 h-12 transition-all duration-300 ${
+    //           activeSection === id
+    //             ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+    //             : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
+    //         }`}
+    //         title={label}
+    //       >
+    //         <Icon className="w-5 h-5" />
+    //       </Button>
+    //     ))}
+    //   </div>
+    // </div>
+    <></>
   )
 }

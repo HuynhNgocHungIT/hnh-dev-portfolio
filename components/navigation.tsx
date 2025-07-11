@@ -19,13 +19,13 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { href: "/", label: "Home", icon: Home },
-    { href: "/about", label: "About", icon: User },
-    { href: "/projects", label: "Projects", icon: Code },
-    { href: "/services", label: "Services", icon: Briefcase },
-    { href: "/blog", label: "Blog", icon: BookOpen },
-    { href: "/testimonials", label: "Testimonials", icon: MessageSquare },
-    { href: "/contact", label: "Contact", icon: Mail },
+    { href: "/", label: "Trang chủ", icon: Home },
+    { href: "/about", label: "Về tôi", icon: User },
+    { href: "/projects", label: "Dự án", icon: Code },
+    // { href: "/services", label: "Dịch vụ", icon: Briefcase },
+    // { href: "/blog", label: "Bài viết", icon: BookOpen },
+    // { href: "/testimonials", label: "Đánh giá", icon: MessageSquare },
+    { href: "/contact", label: "Liên hệ", icon: Mail },
   ]
 
   const toggleTheme = () => {

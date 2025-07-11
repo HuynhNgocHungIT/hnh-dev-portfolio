@@ -7,16 +7,16 @@ export function Footer() {
 
   const footerLinks = {
     navigation: [
-      { href: "/", label: "Home" },
-      { href: "/about", label: "About" },
-      { href: "/projects", label: "Projects" },
-      { href: "/services", label: "Services" },
+      { href: "/", label: "Trang chủ" },
+      { href: "/about", label: "Về tôi" },
+      { href: "/projects", label: "Dự án" },
+      // { href: "/services", label: "Services" },
+      { href: "/contact", label: "Contact" },
     ],
     resources: [
-      { href: "/blog", label: "Blog" },
-      { href: "/testimonials", label: "Testimonials" },
-      { href: "/contact", label: "Contact" },
-      { href: "/privacy", label: "Privacy Policy" },
+      // { href: "/blog", label: "Blog" },
+      // { href: "/testimonials", label: "Testimonials" },
+      // { href: "/privacy", label: "Privacy Policy" },
     ],
   }
 
@@ -30,8 +30,6 @@ export function Footer() {
               hnh-dev-portfolio
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md">
-              Creating beautiful, functional, and user-centered digital experiences through innovative code and creative
-              problem-solving.
             </p>
             <div className="flex space-x-4">
               <MagneticButton
@@ -67,7 +65,7 @@ export function Footer() {
 
           {/* Navigation Links */}
           <div>
-            <h3 className="font-semibold text-gray-800 dark:text-gray-100 mb-4">Navigation</h3>
+            <h3 className="font-semibold text-gray-800 dark:text-gray-100 mb-4">Điều hướng</h3>
             <ul className="space-y-2">
               {footerLinks.navigation.map(({ href, label }) => (
                 <li key={href}>
@@ -83,7 +81,7 @@ export function Footer() {
           </div>
 
           {/* Resources */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-gray-800 dark:text-gray-100 mb-4">Resources</h3>
             <ul className="space-y-2">
               {footerLinks.resources.map(({ href, label }) => (
@@ -97,16 +95,16 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-purple-100 dark:border-purple-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
-            © {currentYear} hnh-dev-portfolio. All rights reserved.
+            © {currentYear} hnh-dev-portfolio. Tất cả quyền được bảo lưu.
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center">
-            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> using Next.js & Tailwind CSS
+            Tạo với <Heart className="w-4 h-4 mx-1 text-red-500" /> bằng Next.js & Tailwind CSS
           </p>
         </div>
       </div>
